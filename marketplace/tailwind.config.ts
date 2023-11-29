@@ -14,7 +14,16 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    fontFamily: {
+      'courgette': ['Courgette', 'cursive'],
+      'ephesis': ['Ephesis', 'cursive'],
+      'mont': ['Montserrat', 'sans-serif']
+
+    }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light", "dark", "cupcake", "corporate"],
+  }
 }
 export default config
