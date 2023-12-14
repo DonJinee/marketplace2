@@ -30,24 +30,6 @@ export const CartContextProvider = (props: Props) => {
         setCartProducts(cProducts)
     }, [])
 
-    // useEffect(() => {
-    //     const getTotals = () => {
-
-    //         if(cartProducts) {
-    //             const {total, qty} = cartProducts?.reduce((acc, item) => {
-    //                 const itemTotal = item.price * item.quantity
-    
-    //                 acc.total += itemTotal
-    //                 acc.qty += 0
-    //             }, {
-    //                 total: 0,
-    //                 qty: 0
-    //             } )
-    //         }
-    //     }
-
-    //     getTotals()
-    // }, [cartProducts])
 
 
     const handleAddProductToCart = useCallback((product: CartProductType) => {
@@ -77,7 +59,6 @@ export const CartContextProvider = (props: Props) => {
             toast.success('Product Removed')
             localStorage.setItem('marketPlaceItems', 
             JSON.stringify(filteredProducts))
-            // return filteredProducts
         }
     }, [])
 
