@@ -1,5 +1,5 @@
 import Container from "@/app/components/Container";
-import marketplaceItems from '@/utils/marketplaceitems.json'
+import marketplaceItems from '@/utils/marketplaceitems'
 import ProductsCard from "@/app/components/products/ProductsCard";
 import SpecificProduct from "@/app/components/products/SpecificProducts";
 
