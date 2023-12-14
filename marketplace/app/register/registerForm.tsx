@@ -35,7 +35,7 @@ const RegisterForm = () => {
         errors={errors} type='password' required
         /></div>
         
-        <Button label={isLoading ? "Loading": "Sign Up"} onClick={()=>{}}>Sign In</Button>
+        <Button label={'Sign In'} onClick={()=>{}}/>
         </div>
      );
 }
